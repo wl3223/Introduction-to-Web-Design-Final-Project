@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weiyi Lu — Interaction Lab Final Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1 class="site-title">Interaction Lab Final Project: A Dandelion's Adventure</h1>
+    <p class="intro">This is the final project of course INTM-SHU-101 Interaction Lab, <em>A Dandelion's Adventure</em>
+        This page documents the concept, fabrication process, and
+        what I learned about interaction design, prototyping, and collaboration.</p>
+        
+    <nav id="container" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="graphics.html">Computer Graphics</a>
+      <a href="ixlab.html" aria-current="page">Interaction Lab</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrapper">
+      <article class="card">
+        <h2>Project Overview</h2>
+        <p>
+          <em>A Dandelion's Adventure</em> is a game project inspired by Flappy Bird. 
+          In this game, a player controls a floating dandelion through vines with hand movement and blowing. Meanwhile, a bird chases from behind. 
+          The purpose is to let the audience immerse themselves in the attractive  game and isolate themselves from the stress outside the world.
+        </p>
+        <img src="images/ixlab/ixlaboverview-1x.jpg" srcset="images/ixlab/ixlaboverview-2x.jpg 2x" 
+          width="600" height="400" alt="Game overview screenshot">
+      </article>
+
+      <article class="card">
+        <h2>Interaction and Controls</h2>
+        <p>
+          We measured hand height by an ultrasonic sensor, and mapped it to the dandelion's vertical position. 
+          We also measured flow change by a flow sensor and mapped it to speed boost. 
+          The game runs in Processing. Arduino streams analog readings via serial.
+        </p>
+        <img src="images/ixlab/instruction-1x.png" srcset="images/ixlab/instruction-2x.png 2x" 
+          width="600" height="400" alt="Ultrasonic and flow sensor interaction mockup">
+      </article>
+
+      <article class="card">
+        <h2>Fabrication and Aesthetics</h2>
+        <p>
+          We laser-cut a stage to put sensors. 
+          Also, we engraved concise instructions on wood planks and decorated the scene with artificial leaves and grass. 
+          Digital art uses real images, including dandelion, vines, bird, which achieves a warm, poetic forest vibe.
+        </p>
+        <img src="images/ixlab/ixlab-1x.jpg" srcset="images/ixlab/ixlab-2x.jpg 2x" 
+          width="600" height="400" alt="Laser-cut stage and physical setup">
+      </article>
+
+      <article class="card">
+        <h2>Demo & Full Documentation</h2>
+        <p>
+          See the full write-up with code snippets, videos, and wiring details on my documentation website:
+          <a href="https://wp.nyu.edu/nyushanghai-livvylu/2024/05/11/interaction-lab-final-project-report/" 
+          target="_blank" rel="noopener">Interaction Lab Final Project Report ↗</a>
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">© 2025 Weiyi Lu</footer>
+  <script src="script.js"></script>
+</body>
+</html>

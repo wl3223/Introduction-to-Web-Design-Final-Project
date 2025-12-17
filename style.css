@@ -1,0 +1,202 @@
+@font-face{
+    font-family:'Aceme-Regular';
+    src:url('font/Acme-Regular.ttf') format('truetype');
+}
+
+body{
+    margin:0; 
+    font:16px/1.6 Arial, sans-serif; 
+    background: linear-gradient(to bottom right, #a8dadc, #f1faee);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width:60em;
+    margin:16px auto 4px;
+}
+
+h1 { font-size: 2.3em; font-family: Arial, sans-serif;}
+h2 { font-size: 1.2em; font-family: Arial, sans-serif;}
+p  { font-size: 1rem; font-family: Arial, sans-serif;}
+
+
+img{max-width:100%; height:auto; display:block}
+
+*{box-sizing:border-box}
+
+.site-title{
+    font-family:'Aceme-Regular', ui-serif, Georgia, serif; 
+    font-size:2.3em;
+    margin:16px auto 4px; 
+    padding:0 12px; 
+    text-align:center;
+}
+
+.intro{
+    margin:0 auto 12px; 
+    padding:0 12px; 
+}
+
+.audio-section{
+    max-width:60em;
+    margin:16px auto;
+    padding:0 12px;
+}
+
+/* flex box navigation */
+#container{
+    display:flex; 
+    gap:12px; 
+    flex-wrap:wrap;
+    flex-direction: column;
+    padding:10px 12px;
+    margin:0 auto;
+    max-width:60em;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    background: rgba(147, 223, 253, 0.5);
+}
+#container a{
+    text-decoration:none; 
+    color:black; 
+    padding:6px 10px; 
+    border-radius:8px;
+}
+#container a[aria-current="page"]{outline:2px solid #5096cc}
+#container a:link { color: black; }
+#container a:hover{background: rgba(255,255,255,.5);}
+#container a:visited {color: #2e539e;}
+#container a:active {outline: 2px solid #5096cc;}
+
+
+@media (min-width: 30em){
+    #container{
+        flex-direction: row;
+    }
+}
+
+
+/* grid */ 
+.wrapper{
+    display:grid; 
+    gap:12px;
+    grid-template-columns: 1fr;
+    max-width:60em;
+    margin:16px auto; 
+    padding:0 12px;
+}
+
+@media (min-width: 40em){
+    .wrapper{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (min-width: 60em){
+    .wrapper{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+
+/* grid for index.html*/ 
+.wrapper_home{
+    display:grid; 
+    gap:30px;
+    grid-template-columns: 1fr;
+    max-width:60em;
+    margin:30px auto; 
+    padding:0 12px;
+}
+
+@media (min-width: 40em){
+    .wrapper_home{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+
+
+.card{
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius:12px; 
+    padding:12px;
+}
+.card h2{
+    margin:.3em 0 .2em; 
+    font-size:1.2em;
+}
+.card p{
+    margin:.2em 0 0;
+}
+
+.site-footer{
+    max-width:60em; 
+    margin:24px auto; 
+    padding:0 12px 24px; 
+    font-size:.9rem;
+}
+
+
+
+.preview {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255,255,255,.25);
+}
+
+.preview iframe{
+  width: 800px;
+  height: 800px;
+  border: 0;
+  transform-origin: 0 0;
+}
+
+.preview iframe { transform-origin: 0 0; transform: scale(0.45); }
+@media (min-width: 900px) {
+  .preview iframe { transform: scale(0.38); }
+}
+@media (min-width: 1200px) {
+  .preview iframe { transform: scale(0.35); }
+}
+
+
+.btnrow { display:flex; gap:8px; flex-wrap:wrap; margin-top:.6rem; }
+.btn {
+    display:inline-block; padding:6px 10px; border-radius:10px;
+    background: rgba(131, 207, 254, 0.3); text-decoration:none; color:#000;
+}
+.btn:hover { background: rgba(131, 207, 254, 0.7); }
+.btn:visited { color: #2e539e; }
+.btn:active { outline: 2px solid #5096cc; }
+.btn:link { color: #000; }
+
+
+
+.anchor-nav {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.anchor-nav a {
+  color: #222;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.05);
+}
+
+.anchor-nav a:hover {background: rgba(0,0,0,0.12);}
+.anchor-nav a:visited { color: #2e539e; }
+.anchor-nav a:active { outline: 2px solid #5096cc; }
+.anchor-nav a:link { color: #222; }
+
+
+.back-top {
+  display: inline-block;
+  margin: 3rem 0 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #444;
+}
+
+.back-top:hover {
+  text-decoration: underline;
+}
